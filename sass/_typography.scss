@@ -1,0 +1,33 @@
+%heading {
+  font-family: $font-heading;
+  font-family: 400;
+}
+.heading-1 {
+  font-size: 4.5rem;
+  color: $color-grey-light1;
+  line-height: 1;
+}
+.heading-2 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+
+  &--dark {
+    color: $color-grey-dark1;
+  }
+  &--light {
+    color: $color-grey-light1;
+  }
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 1.6rem;
+  color: $color-primary;
+  text-transform: uppercase;
+  line-height: 0.5;
+}
+.heading-4 {
+  @extend %heading;
+  font-size: 1.8rem;
+}
